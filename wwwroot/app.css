@@ -1,0 +1,3 @@
+.event-grid-row__highlighted:nth-child(2n) {
+    background: var(--fill-color);
+}

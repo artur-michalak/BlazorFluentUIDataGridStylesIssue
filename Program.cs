@@ -1,4 +1,5 @@
 using BlazorFluentUIDataGridStylesIssue.Components;
+using Microsoft.FluentUI.AspNetCore.Components;
 
 namespace BlazorFluentUIDataGridStylesIssue;
 
@@ -11,6 +12,9 @@ public class Program
         // Add services to the container.
         builder.Services.AddRazorComponents()
             .AddInteractiveServerComponents();
+
+        builder.Services.AddHttpClient();
+        builder.Services.AddFluentUIComponents();
 
         var app = builder.Build();
 
